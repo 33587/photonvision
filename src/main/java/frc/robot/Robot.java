@@ -19,7 +19,7 @@ public class Robot extends TimedRobot {
   @Override
   public void robotInit() {
     drive = new DriveTrainSubsystem();
-    vision = new PhotonVisionSubsystem("CameraName"); // Replace "CameraName" with the PhotonVision camera's name
+    vision = new PhotonVisionSubsystem("limelight"); // Replace "CameraName" with the PhotonVision camera's name
     SmartDashboard.putString("Camera Stream", "http://10.57.24.2:1181/stream.mjpg");
     // Set default drivetrain command
     drive.setDefaultCommand(new TeleopSwerve(drive, drivestick));
