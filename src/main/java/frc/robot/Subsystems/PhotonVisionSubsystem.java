@@ -9,7 +9,7 @@ public class PhotonVisionSubsystem extends SubsystemBase {
     private final PhotonCamera camera;
 
     public PhotonVisionSubsystem(String cameraName) {
-        camera = new PhotonCamera(cameraName); // Name matches PhotonVision configuration
+        camera = new PhotonCamera(cameraName); 
     }
 
     public boolean hasTarget() {
