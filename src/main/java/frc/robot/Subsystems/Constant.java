@@ -18,16 +18,6 @@ public class Constant {
         public static final int RBDriveMotor = 2;//falcon500
         public static final int RBCanID = 59;
         public static final int PigeonID = 49;
-        public static final int IntakeTopMotorID = 11;//Talon SRX
-        public static final int IntakeBotMotorID = 12;//Talon SRX
-        public static final int IntakeSecStageMotorID = 23;//Talon SRX
-        public static final int ShooterLeftMotorID = 20;//CanSparkMax
-        public static final int ShooterRightMotorID = 14;//CanSparkMax
-        public static final int AmpDriveMotorID = 16;//CanSparkMax
-        public static final int AmpArmRotateMotorID = 26;//CanSparkMax
-        public static final int ClimberLeftMotorId = 27;//CanSparkMax
-        public static final int ClimberRightMotorId = 29;//CanSparkMax
-        public static final int TimeOfFlightSensorId = 10;
      }
     public static final class DriveConstants {
         public static final double LFOff = 2.36;// 0.375 * 2 * pi  CANCoder offset in radians
@@ -56,42 +46,6 @@ public class Constant {
         public static final double kNominalVoltage = 0;
         public static final int kDriveCurrentLimit = 0;
         public static final int kSteerCurrentLimit = 0;
-    }
-    public static final class IntakeShooterConstants{
-        public static final double Shooter_kP = 0.00004;
-        public static final double Shooter_kI = 0.000000;
-        public static final double Shooter_kD = 0;
-        public static final double Shooter_kFF = 0.0002;
-        public static final double IntakeSpeed = 0.70;
-        public static final double SecStageIntakeWithAmpGrab = 0.5;
-        public static final double ShooterShootingSpeed = -1;
-        public static final double WheresTheNoteStopDist = 400;//when the time of flight sensor is less than this, stop
-        public static final double NeoMaximumRpm = 5676;
- }
-
-    public static final class AmpConstants{
-        public static final double NeoCountsPerRev = 1.0;
-        public static final int AmpRotateGearRatio = 24;//12 for gearbox 2 for chain sprockets
-        public static final int GrabNoteCurrentLimitAmps = 35;
-        public static final int LargerDriveCurrentLimitAmps = 65;
-        public static final double DriveSpeedSpit = 0.55;
-        public static final double DriveSpeedGrab = 0.25;
-        public static final double AmpRotate_kP = 0.09;
-        public static final double AmpRotate_kI = 0;
-        public static final double AmpRotate_kD = 0;
-        public static final double AmpRotate_kFF = 0;
-        public static final double AmpRotateMaxVel = 1000; // motor rpm (max for NEO is 5676) 
-        public static final double AmpRotateMaxAcc = 300; //rpm/sec
-        public static final double AmpRotateFullRetractPosition = 0;//degrees
-        public static final double AmpRotateGrabNotePosition = 180;//degrees
-        public static final double AmpRotateSpitNotePosition = 110;//degrees
-        public static final double AmpRotateIncrementalMoveDegrees = 10;
-        public static final double AmpRotateMaxFwdDegrees = 213;
-        }
-
-    public static final class ClimberConstants{
-        public static final double ClimberMaxSpeed = 0.5;
-        public static final int ClimberMaxCurrentLimitAmps = 45;
     }
     public static final class ControllerConstants{
         public static double joystickDeadband = 0.1;//a deadband that you must overcome for the joystick input, otherwise we send 0

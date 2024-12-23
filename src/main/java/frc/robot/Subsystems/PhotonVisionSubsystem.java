@@ -12,6 +12,7 @@ public class PhotonVisionSubsystem extends SubsystemBase {
         camera = new PhotonCamera(cameraName); 
     }
 
+    @SuppressWarnings("removal")
     public boolean hasTarget() {
         return camera.getLatestResult().hasTargets();
     }

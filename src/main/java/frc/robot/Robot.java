@@ -11,6 +11,7 @@ import frc.robot.Subsystems.PhotonVisionSubsystem;
 import frc.robot.commands.AlignToTargetCommand;
 import frc.robot.commands.TeleopSwerve;
 
+@SuppressWarnings("unused")
 public class Robot extends TimedRobot {
   private DriveTrainSubsystem drive;
   private PhotonVisionSubsystem vision;
